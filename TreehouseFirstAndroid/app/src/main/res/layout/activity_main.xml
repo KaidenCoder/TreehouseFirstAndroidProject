@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Question"
+            android:textSize="20sp"
+            android:background="#b8e2f2"/>
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:background="#b8e2f2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="Progress"
+            android:textSize="20sp"
+            tools:background="#b8e2f2" />
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:background="#b8e2f2"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/firstoption"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/secondoption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/thirdoption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/fourthoption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/fifthoption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_below="@id/options"
+            android:layout_width="206dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Submit" />
+    </RelativeLayout>
+</ScrollView>
